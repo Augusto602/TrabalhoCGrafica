@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desenho Interativo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="toolbar">
+      <label for="forma">Forma:</label>
+      <select id="forma">
+        <option value="retangulo">Quadrado</option>
+        <option value="circulo">Círculo</option>
+        <option value="triangulo">Triângulo</option>
+      </select>
+
+      <label>Cor:</label>
+      <div class="paleta">
+        <button class="cor" data-cor="red" style="background: red;"></button>
+        <button class="cor" data-cor="blue" style="background: blue;"></button>
+        <button class="cor" data-cor="green" style="background: green;"></button>
+        <button class="cor" data-cor="yellow" style="background: yellow;"></button>
+      </div>
+
+      <button id="borracha" class="btn">Borracha</button>
+      <button id="borracha_on" class="btn" style="display:none;">ON</button>
+      <button id="limpar" class="btn limpar">Apagar tudo</button>
+    </div>
+
+    <canvas id="canvas" width="600" height="500"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
