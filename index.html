@@ -19,15 +19,14 @@
 
       <label>Cor:</label>
       <div class="paleta">
-        <button class="cor" data-cor="red" style="background: red;"></button>
-        <button class="cor" data-cor="blue" style="background: blue;"></button>
-        <button class="cor" data-cor="green" style="background: green;"></button>
-        <button class="cor" data-cor="yellow" style="background: yellow;"></button>
+        <input  type="color" id="pegar_cor" value="#ff0000">
       </div>
 
       <button id="borracha" class="btn">Borracha</button>
       <button id="borracha_on" class="btn" style="display:none;">ON</button>
       <button id="limpar" class="btn limpar">Apagar tudo</button>
+      <button id="mover" class="btn">Mover</button>
+      <button id="mover_on" class="btn" style="display:none;">Mover ON</button>
     </div>
 
     <canvas id="canvas" width="600" height="500"></canvas>
